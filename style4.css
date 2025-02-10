@@ -1,0 +1,108 @@
+body{
+    font: 400 15px Lato, Time New Roman;
+    line-height: 1.8;
+    color: #000000;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #CD5C5C; /* Indian Red */
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #F5F5DC; /* Beige */
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #d46a6a;
+  color: white;
+}
+
+/* Adjust main content to not overlap the sidebar */
+.about {
+  margin-left: 270px; /* Sidebar width + padding */
+  padding: 20px;
+}
+.section{
+    background-color: #252121;
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+}
+.section img{
+    height: 250px;
+    float: right;
+    border: 3px solid #fff;
+    border radius: 10px;
+    margin-right: 15px;
+}
+.section h1{
+    margin: 0;
+    color: IndianRed;
+}
+.section p{
+    color: #c0bdbd;
+    margin-right: 15px;
+}
+
+.section img{
+    height: 250px;
+    float: left;
+    border: 3px solid #fff;
+    border radius: 10px;
+    margin-left: 15px;
+}
+.section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: Black;
+    position: relative; /* Ensure child elements are positioned relative to this container */
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  .button a {
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .button a:hover {
+    background-color: #b30000;
+  }
+
