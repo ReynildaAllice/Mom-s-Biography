@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut Icon" type="image/png" href="contact-information.png">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Ctc.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bodyBg: #f5f5dc; /* Beige */
+            --formBg: #fff5e6; /* Light beige */
+            --textColor: #8b0000; /* Dark red */
+            --primaryColor: #b22222; /* Firebrick red */
+            --paraColor: #cd5c5c; /* Indian red */
+        }
+
+        body {
+            font-family: 'Roboto Serif', serif;
+            color: var(--textColor);
+            background: var(--bodyBg);
+            padding-bottom: 5em;
+            margin: 0;
+        }
+
+        .contactIcon {
+            font-size: 2rem;
+            color: var(--primaryColor);
+            width: 70px;
+        }
+
+        .contactMethod .method a {
+            color: var(--textColor);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .contactMethod .method a:hover {
+            color: var(--primaryColor);
+        }
+
+        /* New styles for clock and calendar */
+        #clock-calendar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--formBg);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #clock {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primaryColor);
+        }
+
+        #date {
+            font-size: 14px;
+            color: var(--textColor);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--primaryColor);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Edu.html">Education Background</a></li>
+                <li><a href="Achievement.html">Achievement</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contact-form">
+        <h4 class="sectionHeader">Contact</h4>
+        <h1 class="heading">Get In Touch!</h1>
+        <p class="para">Your feedback will truly be appreciated!</p>
+
+        <div class="contactForm">
+            <form action="#">
+                <h1 class="sub-heading">Feedback Form</h1>
+                <p class="para para2">Contact for more information.</p>
+                <input type="text" class="input" placeholder="Your Name">
+                <input type="text" class="input" placeholder="Your Email">
+                <input type="text" class="input" placeholder="Your Subject">
+                <textarea class="input" cols="30" rows="5" placeholder="Your Message..."></textarea>
+                <input type="submit" class="input submit" value="Send Message">
+            </form>
+
+            <div class="map-container">
+                <div class="mapBg"></div>
+                <div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.203244274867!2d110.32743085984104!3d1.4150231371516402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fb9fa525da1cb7%3A0x7e5660134d4e296b!2sWillow%20Villas!5e0!3m2!1sen!2smy!4v1734544309473!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </div>
+
+        <div class="contactMethod">
+            <div class="method">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">&#128205 Location</h1>
+                    <p class="para">SL 54,LOT 319,Greenland Villa</p>
+                    <p class="para">Batu 11, 93250, Kuching Sarawak</p>
+                </article>
+            </div>
+
+            <div class="method">
+                <a href="https://www.facebook.com/rllink98" target="_blank">
+                    <i class="fa-brands fa-facebook contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">&#128241 Facebook</h1>
+                    </article>
+                </a>
+            </div>
+
+            <div class="method">
+                <a href="https://www.tiktok.com/@moarikutatakito?_t=8s7wi30qW2B&_r=1" target="_blank">
+                    <i class="fa-brands fa-tiktok contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">&#128241 TikTok</h1>
+                    </article>
+                </a>
+            </div>
+
+            <div class="method">
+                <a href="https://wa.link/xcdc66" target="_blank">
+                    <i class="fa-brands fa-whatsapp contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">&#128241 WhatsApp</h1>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clock and Calendar -->
+    <div id="clock-calendar">
+        <div id="clock"></div>
+        <div id="date"></div>
+    </div>
+
+    <footer>
+        <p>©Reynilda Allice Anak Richard 2024</p>
+	<p>Disclaimer: This website is developed to fulfill the requirement for assignment purposes (IMD318)</p>
+    </footer>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+
+            const dateString = now.toLocaleDateString('en-GB', {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            document.getElementById('clock').textContent = timeString;
+            document.getElementById('date').textContent = dateString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock
+        updateClock();
+    </script>
+</body>
+</html>
